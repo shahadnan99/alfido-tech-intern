@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adnan | Portfolio</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a;
+    color: #e5e7eb;
+}
+
+/* Navbar */
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(46, 132, 163, 0.8);
+}
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #54a0b4, #7c3aed);
+}
+
+.hero h1 span {
+    color: #070401fa;
+}
+
+/* Section spacing */
+section {
+    padding: 80px 0;
+}
+
+/* Cards */
+.card {
+    background: #398ba7;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* Skill badge */
+.skill {
+    background: #ea8b4b;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+/* Contact */
+.form-control {
+    background: white;
+    border: 1px solid #1e293b;
+    color: white;
+}
+
+.form-control:focus {
+    background: #3483aa;
+    color: white;
+    border-color: #6366f1;
+}
+
+/* Footer */
+footer {
+    background: #020617;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+<div class="container">
+    <a class="navbar-brand fw-bold" href="#home">Adnan.</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero text-center text-white">
+<div class="container">
+    <h1 class="display-4 fw-bold">Hi, I'm <span>Adnan</span></h1>
+    <p class="lead mt-3">Web Developer • Student • Programmer</p>
+    <a href="#projects" class="btn btn-light btn-lg mt-4 rounded-pill">View Projects</a>
+</div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+<div class="container">
+    <h2 class="text-center mb-5">Skills</h2>
+    <div class="row g-4 text-center">
+        <div class="col-md-4"><div class="skill">HTML5</div></div>
+        <div class="col-md-4"><div class="skill">CSS3 / Bootstrap</div></div>
+        <div class="col-md-4"><div class="skill">JavaScript (Basics)</div></div>
+        <div class="col-md-4"><div class="skill">C++</div></div>
+        <div class="col-md-4"><div class="skill">Java</div></div>
+        <div class="col-md-4"><div class="skill">DSA</div></div>
+    </div>
+</div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+<div class="container">
+    <h2 class="text-center mb-5">Projects</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card p-4">
+                <h5>Portfolio Website</h5>
+                <p>Modern responsive portfolio design.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-4">
+                <h5>Schedule Builder</h5>
+                <p>Daily study planner for students.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-4">
+                <h5>Mini Projects</h5>
+                <p>HTML, CSS & JS practice projects.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<div class="container">
+    <h2 class="text-center mb-5">Contact</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form>
+                <input class="form-control mb-3" placeholder="Your Name">
+                <input class="form-control mb-3" placeholder="Email">
+                <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+                <button class="btn btn-primary w-100 rounded-pill">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-3">
+    <small>© 2026 Adnan • All Rights Reserved.</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
